@@ -1,0 +1,21 @@
+div span{/*父子选择器*/
+background-color:red;
+}
+div > em{/*直接子元素选择器*/
+background-color:green;
+}
+div #iddiv p.classp{background-color:red!important;}/*计算权重*/
+div .classp#idp{background-color:green!important;}/*无穷+1>无穷*/
+em, strong, span{background-color:yellow;}/*分组选择器*/
+div{
+font-size:12px;/*设置字体大小改变的是高*/
+font-weight:600;/*字体粗细*/
+font-style:italic;/*斜体*/
+font-family:arial;/*字体*/
+color:rgb(0,255,255);/*1英文单词2颜色代码3颜色函数*/
+width:0;height:0;
+border:100px solid black;/*可以分开写*/
+border-left-color:red;
+border-right-color:green;/*trandparent透明*/
+border-top-color:blue;
+}

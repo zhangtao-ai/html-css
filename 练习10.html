@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>document</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				color:#424242;
+				font-family: arial;
+			}
+			.wrapper{
+				border:1px solid black;
+			}
+			.content{
+				width: 100px;
+				height: 100px;
+				background-color: black;
+				color:#fff;
+				float: left;
+			}
+			.wrapper::after{
+				display: block;
+				content:"";
+				clear: both; 
+				/* 想让clear生效的话，所加的元素必须是块级元素 */
+				/* 设置position:absolute;float:left/right;打内部把元素转换成inline-block*/
+				/* float最原始的效果是使文字环绕图片 */
+			}
+			a{
+				text-decoration: none;
+			}
+			.nav{
+				list-style: none;
+			}
+			.nav::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.nav .list-item{
+				float: left;
+				margin: 0 10px;
+				height: 30px;
+				line-height: 30px;
+			}
+			.nav .list-item a{
+				padding: 0 5px;
+				color: #f40;
+				height: 30px;
+				display: inline-block;
+				font-weight: bold;
+				border-radius: 15px;
+			}
+			.nav .list-item a:hover{
+				background-color: #f40;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">1</div>
+			<div class="content">2</div>
+			<div class="content">3</div>
+		</div>
+		<ul class="nav">
+			<li class="list-item"><a href="#">天猫</a></li>
+			<li class="list-item"><a href="#">聚划算</a></li>
+			<li class="list-item"><a href="#">天猫超市</a></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+/*div{
+width:100px;
+height:100px;
+border:1px solid black;
+border-width:10px;
+border-style:dotted;
+border-color:red;
+}
+div{
+border:1px solid black;
+text-align:left;/*对齐方式*/
+/*height:200px;
+line-height:20px;/*单行文本高度=盒子高度时文本垂直居中*/
+/*text-indent:2em;}缩进  1em=1font-size*/
+span{text-decoration:line-through;}/*加一条横线*/
+span{text-decoration:underline;/*下划线*/
+cursor:pointer;}  /*光标*/
+a:hover{background-color:#f40}
+/*行级元素：内容决定元素所占位置；不可以通过改变css改变宽高 span strong em del
+   块级元素：独占一行；可以通过css改变宽高 div p ul li ol form address
+   可以改变display:inline(行级)display:block(块级) 凡是带有inline的元素都有文字特性*/

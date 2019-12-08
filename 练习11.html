@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				width: 300px;
+				height: 20px;
+				line-height: 20px;
+				border: 1px solid black;
+				/white-space: nowrap; 
+				/* 超出部分不换行 */
+				overflow: hidden;
+				text-overflow: ellipsis;
+				/* 打点显示超出部分 */
+				/* height: 40px;
+				line-height: 20px;
+				overflow: hidden;
+				 多行截断，高度控制有几行 */
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				background-image: url(2.jpg);
+				background-size: 100px 100px;
+				background-repeat: no-repeat;
+				background-position:top center;
+			}
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: #424242;
+				border: 1px solid black;
+				padding-top: 90px;
+				overflow: hidden;
+				width: 190px;
+				height:0;
+				background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+				background-size: 190px 90px;
+				/* 当css无法加载时依旧有文字显示 */
+				/* 行级元素只能嵌套行级元素 块级元素可以嵌套任何元素
+				 1.p标签里不能套块级元素 2.a标签不能套a标签*/
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 溢出容器，要打点显示
+		1.单行文本2.多行文本
+		 -->
+		<p>张吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱吱</p>
+		<div></div>
+		<a href="https://www.taobao.com" target="_blank">淘宝网</a>
+	</body>
+</html>

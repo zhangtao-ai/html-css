@@ -1,0 +1,45 @@
+ /*em{ font-style:normal;color:#c00;}
+ a{text-decoration:none;color:#424242;}
+ ul{list-style:none;padding:0;margin:0;}标签重定义
+ *{padding:0;margin:0}通配符初始化*/
+/* div{
+ width:100px;
+ height:100px;
+ background-color:red;
+ border:10px solid black;
+ padding:100px;
+ margin:100px;}
+ padding-top/left/right/bottom margin和border-width相同*/
+ *{margin:0;padding:0;}
+.demo{
+position:relative;
+left:100px;
+top:100px;
+width:100px;
+height:100px;
+background-color:red;
+opacity:0.5;
+}
+.box{
+position: relative;
+top: 100px;
+width:150px;
+height:150px;
+background-color:green;
+}
+/* .demo{
+position:fixed;
+left:50%;
+top:50%;
+width:150px;
+height:150px;
+background-color:green;
+margin-left:-75px;
+margin-top:-75px;
+}
+.box{
+width:150px;
+height:150px;
+border:10px solid black;
+border-radius:50%;
+} */
